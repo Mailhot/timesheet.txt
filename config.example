@@ -1,2 +1,0 @@
-data_folder = './data' # Where your text files (1 per week) resides
-project_filter = 'PRJ-001' # Filter to make a report for a project
