@@ -91,8 +91,9 @@ class FileReader:
                     continue
                 # I have no idea what this is.
                 raise RuntimeError("invalid syntax: %s" % line)
+
             except Exception as e:
-                raise ParserError("error while parsing line %d: %s" % (self.line_no, e)) from e
+                raise ParserError("error while parsing line %d: %s" % (self.line_no, e))
         # If the file is finished and we still have an open interval, return it as open.
         if self.interval_open:
             self.interval_open = False # Basically a lie, but we need to raise StopIteration next time.
