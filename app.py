@@ -1,5 +1,5 @@
 #from timesheettxt import reader, models
-import timesheettxt
+from timesheettxt import timesheettxt
 import datetime
 import helpers
 import config
