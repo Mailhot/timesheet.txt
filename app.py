@@ -1,5 +1,5 @@
 #from timesheettxt import reader, models
-import timesheettxt
+from timesheettxt import reader, report
 import datetime
 import helpers
 import config
@@ -16,8 +16,8 @@ for filename in filenames:
 
     with open(filename_path, 'r') as the_file:
 
-        results = timesheettxt.reader.FileReader(the_file)
-        issue_report = timesheettxt.report.FileReport()
+        results = reader.FileReader(the_file)
+        issue_report = report.FileReport()
         total_issue_report.append(issue_report)
         
         for result in results:

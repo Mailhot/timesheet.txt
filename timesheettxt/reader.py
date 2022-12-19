@@ -1,6 +1,7 @@
 import datetime
 from dateutil.tz import gettz
-import models
+from . import description
+from . import models
 import re
 
 try:
@@ -19,7 +20,11 @@ class ParserError(RuntimeError):
     pass
 
 class FileReader:
+
+
     def __init__(self, file):
+
+        
         self.file = file
         self.line_no = 0
         self.context = models.Context()

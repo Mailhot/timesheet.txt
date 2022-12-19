@@ -1,6 +1,6 @@
 import copy
 import datetime
-import description
+
 
 class Context:
     def __init__(self):
@@ -11,6 +11,7 @@ class ContextError(RuntimeError):
     pass
 
 class Interval:
+    from . import description
     extractors = [
         description.IssueIDExtractor(),
         description.BillableExtractor(),
