@@ -36,6 +36,12 @@ class FileReport:
 
         hours, minutes, _ = convert_timedelta(total_time)
         print(f'Total: {hours}:{minutes:02d}')
+        for result in results.keys():
+            if result == 'None':
+                continue
+            else:
+                print(result, results[result]['duration'])
+            #print(results)
         print('')
 
         return results
