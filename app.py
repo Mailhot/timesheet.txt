@@ -77,9 +77,9 @@ hours = total_duration.days * 24 + total_duration.seconds // 3600
 minutes = (total_duration.seconds % 3600) // 60 /60
 print('{} ({})'.format(hours + minutes, total_duration), 'Total')
 
-print('')
-print('----------------- Weekly Report for %s ------------------' %filename)
+# print('')
+# print('----------------- Weekly Report for %s ------------------' %filename)
 
-print()
-print(' Total Hours: ', )
+# print()
+# print(' Total Hours: ', )
 
